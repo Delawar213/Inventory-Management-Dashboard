@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from '../(components)/Navbar'
+import React from 'react';
+import Navbar from '../(components)/Navbar';
 
 const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -10,7 +10,8 @@ const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
         {children}
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default DashboardWrapper
+export default DashboardWrapper;
+
