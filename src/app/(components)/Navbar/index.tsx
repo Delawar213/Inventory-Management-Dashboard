@@ -1,6 +1,7 @@
 "use client"
 import { MenuPaper } from '@mui/material'
-import { Bell, Camera, Menu, Sun } from 'lucide-react'
+import { Bell, Camera, Menu, Settings, Sun } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
@@ -35,7 +36,18 @@ const Navbar = () => {
               <Bell className="cursor-pointer text-gray-500" size={24}/>
               <span className="absolute -top-2 -right-2 inline-flex items-center  justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none text-red-100 bg-red-400 rounded-full" >5</span>
             </div>
+            <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
+            <div className="flex items-center cursor-pointer gap-3">
+              <div className="w-9 h-9">
+                Image 
+              </div>
+              <span className="font-semibold">Delawar Shah</span>
+            </div>
           </div>
+          <Link href={"/setting "}>
+          <Settings  className="cursor-pointer items-center text-gray-500" size={24}/>
+          </Link>
+
         </div>
 
       </div>
